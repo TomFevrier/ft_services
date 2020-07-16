@@ -1,0 +1,29 @@
+secretGenerator:
+# - name: ssh
+#   literals:
+#   - username=wpark
+#   - password=1234
+- name: mysql
+  literals:
+  - username=root
+  - password=qwertyuiop
+# - name: ftps
+#   literals:
+#   - username=wpark
+#   - password=1234
+
+# configMapGenerator:
+# - name: telegraf-config
+#   files:
+#   - telegraf.conf=telegraf/telegraf-target.conf
+
+resources:
+  - mysql/config.yaml
+  # - influxdb.yaml
+  # - grafana.yaml
+  # - ftps.yaml
+  # - phpmyadmin.yaml
+  # - telegraf.yaml
+  # - nginx.yaml
+  # - ingress.yaml
+  - wordpress/config.yaml
